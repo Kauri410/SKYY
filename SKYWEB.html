@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation Basics</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #87CEEB, #B0E0E6); /* Sky blue gradient background */
+            color: #333;
+        }
+        header {
+            background: url('https://via.placeholder.com/1500x600.png?text=Airplane+Flying+in+Sky') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            background-attachment: fixed;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 3.8em;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+        }
+        header p {
+            font-size: 1.3em;
+            font-style: italic;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #003366;
+            border-bottom: 2px solid #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li {
+            margin: 0 25px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 25px;
+            display: block;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #004080;
+            transform: scale(1.1);
+        }
+        main {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            border-radius: 15px;
+            margin-top: -50px;
+        }
+        h2 {
+            color: #003366;
+            text-transform: uppercase;
+            font-size: 2.6em;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            width: 48%;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #003366;
+            color: white;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+        .highlight-text {
+            color: #006699;
+            font-weight: bold;
+        }
+        .airplane-icon {
+            width: 45px;
+            height: 45px;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        .blue-sky {
+            background-color: #cce6ff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+        .blue-sky p {
+            font-size: 1.2em;
+            color: #003366;
+        }
+        .section-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        .card h3 {
+            font-size: 1.8em;
+            margin-top: 20px;
+            color: #003366;
+        }
+        .card p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.1em;
+        }
+        /* Hover effects for main content */
+        h3:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aviation Basics: Fly High with Knowledge</h1>
+        <p>Explore the incredible world of aviation, from its history to the science that keeps us flying.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#history">History of Aviation</a></li>
+            <li><a href="#principles">Principles of Flight</a></li>
+            <li><a href="#controls">Aircraft Controls</a></li>
+            <li><a href="#cockpit">Cockpit & Instruments</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- History Section -->
+        <section id="history">
+            <h2><img src="https://via.placeholder.com/40x40?text=✈" class="airplane-icon">The Pioneering Era (1903-1914)</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/1200x500.png?text=Pioneering+Era" alt="Wright Brothers First Flight">
+                    <p>In 1903, the Wright Brothers made history with the first powered, controlled flight at Kitty Hawk, North Carolina. This momentous flight changed the course of human travel and exploration forever, paving the way for the modern aviation industry.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/1200x500.png?text=First+Flight" alt="Wright Brothers First Flight">
+                    <p>The Wright Flyer, the first powered aircraft, achieved the impossible in 1903. This aircraft's unique design set the stage for generations of innovation and growth in aviation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- World War I Section -->
+        <section>
+            <h2><img src="https://via.placeholder.com/40x40?text=✈" class="airplane-icon">World War I (1914-1918)</h2>
+            <div class="card">
+                <img src="https://via.placeholder.com/1200x500.png?text=WWI+Aircraft" alt="WWI Aircraft">
+                <p>World War I was a turning point for aviation. Aircraft were used for reconnaissance, bombing, and dogfights. The war's technological advances led to the rapid evolution of military aircraft.</p>
+            </div>
+        </section>
+
+        <!-- World War II Section -->
+        <section>
+            <h2><img src="https://via.placeholder.com/40x40?text=✈" class="airplane-icon">World War II and the Jet Age (1939-1945)</h2>
+            <div class="card">
+                <img src="https://via.placeholder.com/1200x500.png?text=WWII+Aircraft" alt="WWII Aircraft">
+                <p>During World War II, the advent of jet engines and more powerful aircraft radically transformed aerial warfare. Aircraft like the P-51 Mustang and the B-17 Flying Fortress became legendary, defining the air conflict of the era.</p>
+            </div>
+        </section>
+
+        <!-- Post-War Aviation Section -->
+        <section>
+            <h2><img src="https://via.placeholder.com/40x40?text=✈" class="airplane-icon">Post-War Aviation</h2>
+            <div class="blue-sky">
+                <p>The end of World War II marked the beginning of modern aviation. Jet engines revolutionized commercial air travel, making the world more connected than ever before. Today, we have supersonic flights and space travel in the works!</p>
+                <img class="section-img" src="https://via.placeholder.com/1200x500.png?text=Post+WWII+Aircraft" alt="Post WWII Aircraft">
+            </div>
+        </section>
+
+        <!-- Principles of Flight -->
+        <section id="principles">
+            <h2><img src="https://via.placeholder.com/40x40?text=✈" class="airplane-icon">Principles of Flight</h2>
+            <div class="container">
+                <div class="card">
+                    <h3>Bernoulli’s Theorem</h3>
+                    <p>Bernoulli's principle explains how lift is generated on an aircraft wing. As air moves faster over the top of the wing, it creates lower pressure, allowing the wing to lift.</p>
+                </div>
+                <div class="card">
+                    <h3>Lift and Drag</h3>
+                    <p>Lift allows an aircraft to overcome gravity, while drag works against the aircraft’s motion. Managing these forces is key to stable flight.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aircraft Controls -->
+        <section id="controls">
+            <h2><img src="https://via.placeholder.com/40x40?text=✈" class="airplane-icon">Aircraft Controls</h2>
+            <div class="container">
+                <div class="card">
+                    <h3>Primary Controls</h3>
+                    <ul>
+                        <li><strong>Rudder:</strong> Controls yaw (left-right movement).</li>
+                        <li><strong>Elevator:</strong> Controls pitch (nose up/down).</li>
+                        <li><strong>Ailerons:</strong> Control roll, allowing the aircraft to turn.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Secondary Controls</h3>
+                    <ul>
+                        <li><strong>Flaps:</strong> Used during takeoff and landing to increase lift and drag.</li>
+                        <li><strong>Slats:</strong> Help in slow-speed flight, improving lift.</li>
+                        <li><strong>Spoilers:</strong> Reduce lift and increase drag to slow the aircraft.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cockpit and Instruments Section -->
+        <section id="cockpit">
+            <h2><img src="https://via.placeholder.com/40x40?text=✈" class="airplane-icon">Cockpit and Instruments</h2>
+            <div class="container">
+                <div class="card">
+                    <h3>Airspeed Indicator</h3>
+                    <p>Measures the aircraft's speed, crucial for safe operations during different phases of flight.</p>
+                </div>
+                <div class="card">
+                    <h3>Altimeter</h3>
+                    <p>Indicates the aircraft's altitude by measuring air pressure.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aviation Basics | Designed for Sky Enthusiasts</p>
+    </footer>
+</body>
+</html>
